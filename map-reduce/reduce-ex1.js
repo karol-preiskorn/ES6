@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+
 const euros = [29.76, 41.85, 46.5];
 
 var sum = euros.reduce((total, amount) => total + amount);
@@ -23,7 +24,6 @@ const average = euros.reduce((total, amount, index, array) => {
 });
 
 console.info(average);
-
 
 const count = euros.reduce((tally, fruit) => {
     tally[fruit] = (tally[fruit] || 0) + 1;

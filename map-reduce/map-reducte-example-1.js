@@ -2,8 +2,6 @@
 
 /*jshint esversion: 6 */
 
-/*jshint esversion: 6 */
-
 export const attachments = [{
         files: [{
                 id: 1,
