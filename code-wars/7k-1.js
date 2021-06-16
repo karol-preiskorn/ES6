@@ -36,21 +36,26 @@ var list1 = [{
 
 function countDevelopers(list) {
     return list
-        .map((list) => ((list.continent == "Europe" &&
-            list.language == "Javascript") ? 1 : 0))
+        .map((list) =>
+            list.continent == "Europe" && list.language == "Javascript" ? 1 : 0
+        )
         .reduce((a, v) => a + v, 0);
 }
 
-function countDevelopers(list) {
+function countDevelopers2(list) {
     return list
         .filter((dev) => dev.language === "JavaScript")
         .filter((dev) => dev.continent === "Europe").length;
 }
 
-function countDevelopers(list) {
+function countDevelopers3(list) {
     return list.filter(
         (x) => x.continent == "Europe" && x.language == "JavaScript"
     ).length;
 }
 
 console.log(countDevelopers(list1));
+module.exports.list1 = list1;
+module.exports.countDevelopers = countDevelopers;
+module.exports.countDevelopers2 = countDevelopers2;
+module.exports.countDevelopers3 = countDevelopers3;

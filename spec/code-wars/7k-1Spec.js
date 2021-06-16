@@ -1,5 +1,6 @@
 describe("Test", () => {
-    require("../../code-wars/7k-1.js");
+    var Test = require("../../code-wars/7k-1.js");
+
     it("test", () => {
         var list1 = [{
                 firstName: "Noah",
@@ -53,6 +54,8 @@ describe("Test", () => {
             },
         ];
 
-        expect(countDevelopers(list1)).to.eq(1);
+        expect(Test.countDevelopers(list1)).toBe(0);
+        expect(Test.countDevelopers2(list1)).toEqual(0);
+        expect(Test.countDevelopers3(list1)).toBe(0);
     });
 });
