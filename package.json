@@ -1,11 +1,16 @@
 {
     "type": "commonjs",
+    "description": "Code-Wars test",
+    "author": {
+        "name": "Karol Preiskorn"
+    },
     "scripts": {
         "test": "jasmine"
     },
     "devDependencies": {
         "express": "~4.17.1",
         "jasmine": "^3.7.0",
+        "mocha": "^9.0.1",
         "path": "~0.12.7",
         "react": "~16.13.1",
         "react-dom": "~16.13.1",
@@ -15,6 +20,13 @@
         "webpack-cli": "~3.3.11"
     },
     "dependencies": {
+        "bluebird": "^3.7.2",
         "quokka-treasure-chest": "^1.0.2"
-    }
+    },
+    "paths": [
+        "./node_modules",
+        "./code-wars/",
+        "./map-reduce/",
+        "./test"
+    ]
 }
